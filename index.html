@@ -40,19 +40,31 @@ src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
 }
 
 #es-sanofi.es-sanofi .es-kv__title {
-  font-family: "MontserratBold", sans-serif;
   margin: 0;
   padding: 0;
   line-height: inherit;
   color: #fff;
+  font-family: "MontserratBold", sans-serif;
   font-size: 20px;
   text-transform: uppercase;
   text-shadow: 0 0 5px #52338c;
-  padding-left: 28%;
+  padding-left: 27%;
   /* animation: slideleft 0.6s forwards;
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
   opacity: 0; */
+}
+
+#es-sanofi.es-sanofi .es-kv__subtitle {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: #fff;
+  font-family: "MontserratBold", sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px #52338c;
+  padding-left: 27%;
 }
 
 #es-sanofi.es-sanofi .es-kv__content {
@@ -74,7 +86,7 @@ src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
 #es-sanofi.es-sanofi .es-kv__img--packshot {
   max-width: 80%;
   margin-right: 0;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 #es-sanofi.es-sanofi .es-benefits__content {
@@ -202,21 +214,20 @@ src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
 
 #es-sanofi.es-sanofi .es-treatment__txt {
   margin: 0;
-  padding: 0;
+  padding: 0 10px;
   line-height: inherit;
   color: #52338c;
   font-family: inherit;
   font-weight: inherit;
-  font-size: 18px;
-  margin-bottom: 24px;
+  font-size: 16px;
+  margin-bottom: 12px;
   text-align: center;
   margin-inline: auto;
-  max-width: 355px;
+  max-width: 415px;
 }
 
-#es-sanofi.es-sanofi .es-treatment__txt--small {
-  font-size: 13px;
-  max-width: 365px;
+#es-sanofi.es-sanofi .es-treatment__txt--desktop {
+  display: none;
 }
 
 #es-sanofi.es-sanofi .es-treatment__txt--span {
@@ -224,21 +235,19 @@ src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
 }
 
 #es-sanofi.es-sanofi .es-treatment__content {
-  background: rgb(82,51,140);
-  background: linear-gradient(310deg, rgba(82,51,140,1) 0%, rgba(82,51,140,1) 50%, rgba(94,66,148,1) 50%, rgba(94,66,148,1) 100%);  
+  background-color: #d32833;
 }
 
 #es-sanofi.es-sanofi .es-treatment__subtitle {
   font-family: "MontserratBold", sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 20px 10px;
   line-height: inherit;
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
   margin-inline: auto;
-  max-width: 300px;
-  padding-top: 24px;
+  max-width: 385px;
 }
 
 #es-sanofi.es-sanofi .es-treatment__img {
@@ -266,9 +275,9 @@ src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
 }
 
 #es-sanofi.es-sanofi .es-treatment__img--pillAppear {
-  -webkit-transform: translateX(-40px);
-  -ms-transform: translateX(-40px);
-  transform: translateX(-40px);
+  -webkit-transform: translateX(40px);
+  -ms-transform: translateX(40px);
+  transform: translateX(40px);
 }
 
 #es-sanofi.es-sanofi .es-reasons {
@@ -562,12 +571,17 @@ src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
   max-width: 355px;
 }
 
+#es-sanofi.es-sanofi .es-cross__txt--1 {
+  margin-top: 0;
+}
+
 #es-sanofi.es-sanofi .es-cross__signature {
-  margin: 0;
-  padding: 19px 0;
+  margin: 0 0 22px 0;
+  padding: 0;
   line-height: inherit;
   color: #52338c;
-  font-family: "MontserratBold", sans-serif;
+  font-family: inherit;
+  font-weight: 700;
   font-size: 13px;
   text-align: center;
   white-space: nowrap;
@@ -582,8 +596,8 @@ src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
   justify-content: flex-end;
   align-items: flex-start;
   flex-flow: column;
-  margin-bottom: 133px;
-  margin-right: 16px;
+  margin-bottom: 116px;
+  margin-right: 8px;
 }
 
 #es-sanofi.es-sanofi .es-cross__wrapper {
@@ -618,6 +632,10 @@ src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
   justify-content: flex-end;
   align-items: center;
   flex-flow: column;
+  width: 50%;
+}
+
+#es-sanofi.es-sanofi .es-cross__single--1 {
   height: 140px;
 }
 
@@ -681,7 +699,7 @@ src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
   line-height: inherit;
   color: #fff;
   font-family: "MontserratBold", sans-serif;
-  font-size: 13px;
+  font-size: 11px;
   background-color: #d32833;
   margin-bottom: 8px;
   border-radius: 5px;
@@ -846,6 +864,7 @@ src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
 
 #es-sanofi.es-sanofi .es-sanofi__span {
   color: #fdc200;
+  font-style: normal;
 }
 
 @media (min-width: 404px) {
@@ -855,8 +874,14 @@ src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
 }
 
 @media (min-width: 444px) {
+  #es-sanofi.es-sanofi .es-kv__subtitle {
+    font-size: 15px;
+  }
   #es-sanofi.es-sanofi .es-kv__title {
-    font-size: 26px;
+    font-size: 28px;
+  }
+  #es-sanofi.es-sanofi .es-kv__img--packshot {
+    margin-top: 90px;
   }
   #es-sanofi.es-sanofi .es-effect__name {
     font-size: 20px;
@@ -877,10 +902,14 @@ src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
   }
 }
 
-@media (min-width: 666px) {
+@media (min-width: 800px) {
   #es-sanofi.es-sanofi .es-kv__title {
     font-size: 36px;
     padding-left: 32%;
+  }
+  #es-sanofi.es-sanofi .es-kv__subtitle {
+    padding-left: 32%;
+    font-size: 18px;
   }
   #es-sanofi.es-sanofi .es-kv__img--desktop {
     display: block;
@@ -889,7 +918,7 @@ src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
     display: none;
   }
   #es-sanofi.es-sanofi .es-kv__img--packshot {
-    margin-top: -80px;
+    margin-top: -60px;
   }
   #es-sanofi.es-sanofi .es-benefits__content {
     gap: 24px;
@@ -954,15 +983,6 @@ src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
   #es-sanofi.es-sanofi .es-treatment__title {
     font-size: 32px;
     padding: 32px 0;
-  }
-  #es-sanofi.es-sanofi .es-treatment__txt {
-    font-size: 20px;
-  }
-  #es-sanofi.es-sanofi .es-treatment__txt--small {
-    font-size: 18px;
-  }
-  #es-sanofi.es-sanofi .es-treatment__subtitle {
-    font-size: 22px;
   }
   #es-sanofi.es-sanofi .es-dose__title {
     font-size: 32px;
@@ -1044,7 +1064,8 @@ src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
   display: block;
 }
 #es-sanofi.es-sanofi .es-treatment {
-  min-height: 616px;
+  min-height: 666px;
+  position: relative;
 }
 #es-sanofi.es-sanofi .es-treatment__content {
   background: url(./img/bg-1.webp);
@@ -1052,28 +1073,57 @@ src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
   position: relative;
   z-index: 5;
 }
-#es-sanofi.es-sanofi .es-treatment {
-  position: relative;
-}
 #es-sanofi.es-sanofi .es-treatment__txt {
-  max-width: 480px;
-  margin-left: 0;
+  max-width: unset;
+  padding: 20px 370px 20px 60px;
+  font-size: 18px;
+  text-align: left;
+  position: relative;
+  margin-bottom: 0;
 }
-#es-sanofi.es-sanofi .es-treatment__txt--small {
+#es-sanofi.es-sanofi .es-treatment__txt--1 {
+  background-color: #d32833;
+  color: #fff;
+  padding-right: 325px;
+}
+#es-sanofi.es-sanofi .es-treatment__txt--2::before {
+  content: url(./img/dot.webp);
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  width: 30px;
+  height: 30px;
+}
+#es-sanofi.es-sanofi .es-treatment__txt--mobile {
+  display: none;
+}
+#es-sanofi.es-sanofi .es-treatment__txt--desktop {
+  display: block;
 }
 #es-sanofi.es-sanofi .es-treatment__subtitle {
   max-width: 400px;
-  margin-left: 40px;
+  margin-left: 50px;
+  font-weight: 400;
+  text-align: left;
+  font-size: 18px;
 }
 #es-sanofi.es-sanofi .es-treatment__img--desktop {
   display: block;
   position: absolute;
-  top: 111px;
+  top: 125px;
   right: 0px;
-  max-width: 440px;
 }
 #es-sanofi.es-sanofi .es-treatment__img--mobile {
   display: none;
+}
+#es-sanofi.es-sanofi .es-treatment__img--pill {
+  display: none;
+}
+#es-sanofi.es-sanofi .es-treatment__img--packshot {
+  top: 410px;
+  right: 0;
+  z-index: 10;
+  width: 365px;
 }
 #es-sanofi.es-sanofi .es-video__title {
   margin-top: -40%;
@@ -1098,12 +1148,11 @@ src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
 #es-sanofi.es-sanofi .es-ingr {
   width: 47%;
 }
-#es-sanofi.es-sanofi .es-cross__header {
-  margin-bottom: 125px;
-}
 #es-sanofi.es-sanofi .es-cross__signature {
-  padding: 20px 0;
   font-size: 15px;
+}
+#es-sanofi.es-sanofi .es-cross__header {
+  margin-bottom: 108px;
 }
 #es-sanofi.es-sanofi .es-info__title {
   margin-top: -40%;
@@ -1311,9 +1360,12 @@ src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
             <img src="./img/kv-mb.webp" alt="Bóle menstruacyjne, wzdęcia, silny ból brzucha? Lek bez recepty No-Spa MAX likwiduje przyczyny różnych bólów brzucha." class="es-kv__img es-kv__img--mobile">
             <img src="./img/kv.webp" alt="Lek rozkurczowy No-Spa teraz duże opakowanie, 48 tabletek powlekanych, dostępne bez recepty w aptece internetowej Melissa." class="es-kv__img es-kv__img--desktop">
             <div class="es-kv__content">
-                <div class="es-kv__title">
-                  duże, <span class="es-sanofi__span">ekonomiczne</span> <br /> opakowanie
-                </div>
+              <div class="es-kv__subtitle">
+                WŁAŚCIWY SPOSÓB NA BÓLE BRZUCHA<sup class="es-sanofi__sup">7</sup>
+            </div>
+            <div class="es-kv__title">
+                <em class="es-sanofi__span">TERAZ W WIĘKSZYM OPAKOWANIU</em>
+            </div>
                 <div class="es-kv__packshot">
                     <img src="./img/packshot.webp" alt="No-Spa MAX 20 tabletek, lek na ból brzucha dla dorosłych i dzieci od 12 roku życia, do kupienia w aptece internetowej Melissa." class="es-kv__img es-kv__img--packshot">
                 </div>
@@ -1374,26 +1426,33 @@ src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
         </div>
 
         <div class="es-treatment">
-            <div class="es-treatment__title">
-                JAK WŁAŚCIWIE <br> <span class="es-sanofi__span">LECZYĆ BÓL BRZUCHA?</span>
-            </div>
-            <div class="es-treatment__txt es-treatment__txt--small">
-                Bóle skurczowe związane z&nbsp;nadmiernym napięciem mięśni gładkich w&nbsp;jamie brzusznej, 
-                odczuwane są inaczej niż np. ból zęba czy głowy.<sup class="es-sanofi__sup">4</sup>
-            </div>
-            <div class="es-treatment__txt">
-                Czy wiesz, że <span class="es-treatment__txt--span">ponad 50% Polaków<sup class="es-sanofi__sup">5</sup></span> leczy skurczowe bóle brzucha lekami 
-                o&nbsp;działaniu przeciwbólowym, chociaż ich zadaniem nie jest łagodzenie siły skurczów?<sup class="es-sanofi__sup">6</sup>
-            </div>
-            <div class="es-treatment__content">
-                <div class="es-treatment__subtitle">
-                    Wsparciem dla organizmu w&nbsp;takim przypadku, mogą być dostępne bez recepty <br>
-                    <span class="es-sanofi__span">celowane leki rozkurczowe.</span>
-                </div>
-                <img src="./img/pill.webp" alt="Co pomaga na ból brzucha? Lek o działaniu przeciwbólowym i rozkurczowym No-Spa MAX." class="es-treatment__img es-treatment__img--pill es-treatment__img--pillAppear">
-            </div>
-            <img src="./img/woman-mb.webp" alt="Lek No-Spa MAX na silny ból brzucha, pomaga łagodzić bóle miesiączkowe i ból brzucha związany z zespołem jelita drażliwego." class="es-treatment__img es-treatment__img--mobile">
-            <img src="./img/woman.webp" alt="Lek No-Spa MAX na silny ból brzucha, pomaga łagodzić bóle miesiączkowe i ból brzucha związany z zespołem jelita drażliwego." class="es-treatment__img es-treatment__img--desktop">
+          <div class="es-treatment__title">
+              JAK WŁAŚCIWIE <br> <span class="es-sanofi__span">LECZYĆ BÓL BRZUCHA?</span>
+          </div>
+          <div class="es-treatment__txt es-treatment__txt--mobile">
+              <span class="es-treatment__txt--span">Ponad 50% Polaków</span> leczy skurczowe bóle brzucha lekami przeciwbólowymi<sup class="es-sanofi__sup">5</sup>, 
+              które nie są lekami pierwszego wyboru w&nbsp;przypadku skurczowego bólu brzucha<sup class="es-sanofi__sup">6</sup>, ponieważ działają na ośrodkowy układ nerwowy, a&nbsp;nie rozkurczowo.
+          </div>
+          <div class="es-treatment__txt es-treatment__txt--mobile">
+              Skurczowe bóle brzucha związane m.in. ze&nbsp;stresem, niewłaściwym jedzeniem lub chorobami dróg moczowych powinny być leczone u&nbsp;źródła - poprzez likwidację skurczu.
+          </div>
+          <div class="es-treatment__txt es-treatment__txt--1 es-treatment__txt--desktop">
+              <span class="es-treatment__txt--span">Ponad 50% Polaków leczy skurczowe bóle brzucha lekami przeciwbólowymi<sup class="es-sanofi__sup">5</sup>, 
+              które nie są lekami pierwszego wyboru w&nbsp;przypadku skurczowego bólu brzucha<sup class="es-sanofi__sup">6</sup></span>, ponieważ działają na ośrodkowy układ nerwowy, a&nbsp;nie&nbsp;rozkurczowo.
+          </div>
+          <div class="es-treatment__txt es-treatment__txt--2 es-treatment__txt--desktop">
+              Skurczowe bóle brzucha związane m.in. ze&nbsp;stresem, niewłaściwym jedzeniem lub chorobami dróg moczowych powinny być <span class="es-sanofi__span es-treatment__txt--span">leczone u&nbsp;źródła - poprzez likwidację skurczu.</span>
+          </div>
+          <div class="es-treatment__content">
+              <div class="es-treatment__subtitle">
+                  Zgodnie z wytycznymi, wsparciem dla organizmu w&nbsp;takim przypadku powinny być <span class="es-sanofi__span es-treatment__txt--span">„celowane” leki rozkurczowe</span>, które działając 
+                  w&nbsp;miejscu bólu - likwidują skurcz i&nbsp;usuwają źródło bólu.<sup class="es-sanofi__sup">10</sup>
+              </div>
+              <img src="./img/pill.webp" alt="Jakie tabletki na ból brzucha? Lek przeciwbólowy o działaniu rozkurczowym No-Spa MAX." class="es-treatment__img es-treatment__img--pill es-treatment__img--pillAppear">
+          </div>
+          <img src="./img/woman-mb.webp" alt="Skurcze, silny ból brzucha, bóle menstruacyjne, wzdęcia, zespół jelita drażliwego? Wypróbuj lek bez recepty No-Spa MAX." class="es-treatment__img es-treatment__img--mobile">
+          <img src="./img/woman.webp" alt="Skurcze, silny ból brzucha, bóle menstruacyjne, wzdęcia, zespół jelita drażliwego? Wypróbuj lek bez recepty No-Spa MAX." class="es-treatment__img es-treatment__img--desktop">
+          <img src="./img/packshot-2.webp" alt="No-Spa MAX 20 tabletek, lek na ból brzucha dla dorosłych i dzieci od 12 roku życia, do kupienia w aptece internetowej Melissa." class="es-treatment__img es-treatment__img--packshot es-treatment__img--desktop">
         </div>
 
         <div class="es-wrapper2">
@@ -1537,67 +1596,70 @@ src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
         </div>
 
         <div class="es-cross">
-            <div class="es-cross__title">
-                RODZINA PRODUKTÓW <span class="es-sanofi__span">No-Spa</span>
-            </div>
-            <div class="es-cross__wrp">
-                <div class="es-cross__header">
-                    <div class="es-cross__signature">Typ produktu</div>
-                    <div class="es-cross__signature">Dawkowanie</div>
-                    <div class="es-cross__signature">Opakowanie</div>
-                </div>
-                <div class="es-cross__wrapper">
-                    <div class="es-cross__container">
-                        <div class="es-cross__content">
-                            <div class="es-cross__single">
-                                <a href="https://www.apteka-melissa.pl/produkt/no-spa-20-tabl,109.html" target="_blank"><img src="./img/cross-1.webp" alt="No-Spa na ból brzucha dla dzieci od 6 roku życia, lek ma działanie rozkurczowe i łagodzi ból brzucha o różnym pochodzeniu." class="es-cross__img"></a>
-                                <div class="es-cross__name">No-Spa</div>
-                            </div>
-                            <div class="es-cross__single">
-                                <a href="https://www.apteka-melissa.pl/produkt/no-spa-40-tabl,1723.html" target="_blank"><img src="./img/cross-2.webp" alt="No-Spa w dużym opakowaniu starczy na dłużej, 40 tabletek bez recepty do kupienia w aptece internetowej Melissa." class="es-cross__img"></a>
-                                <div class="es-cross__name">No-Spa</div>
-                            </div>
-                        </div>
-                        <div class="es-cross__txt"><b>Tabletki</b> <br> Lek bez recepty</div>
-                        <div class="es-cross__txt">dzieci powyżej 6. roku życia, dorośli</div>
-                        <div class="es-cross__content">
-                            <div class="es-cross__single">
-                                <div class="es-cross__txt">20 tabletek</div>
-                                <a href="https://www.apteka-melissa.pl/produkt/no-spa-20-tabl,109.html" target="_blank" class="es-cross__btn">Sprawdź</a>
-                            </div>
-                                <div class="es-cross__single">
-                                <div class="es-cross__txt">40 tabletek</div>
-                                <a href="https://www.apteka-melissa.pl/produkt/no-spa-40-tabl,1723.html" target="_blank" class="es-cross__btn">Sprawdź</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="es-cross__container es-cross__container--2">
-                        <div class="es-cross__content">
-                            <div class="es-cross__single">
-                                <a href="https://www.apteka-melissa.pl/produkt/no-spa-max-80-mg-20-tabl,3180.html" target="_blank"><img src="./img/cross-3.webp" alt="No-Spa MAX 20 tabletek powlekanych, podwójna dawka drotaweryny, na silne skurcze i bóle brzucha." class="es-cross__img"></a>
-                                <div class="es-cross__name">No-Spa Max</div>
-                            </div>
-                            <div class="es-cross__single">
-                                <div class="es-cross__label">DUŻE OPAKOWANIE</div>
-                                <a href="#" target="_blank"><img src="./img/cross-4.webp" alt="No-Spa MAX bez recepty, 48 tabletek powlekanych starczy na dłużej, do kupienia w aptece internetowej Melissa." class="es-cross__img"></a>
-                                <div class="es-cross__name">No-Spa Max</div>
-                            </div>
-                        </div>
-                        <div class="es-cross__txt"><b>Tabletki powlekane</b> <br> Lek bez recepty</div>
-                        <div class="es-cross__txt">dzieci powyżej 12. roku życia, dorośli</div>
-                        <div class="es-cross__content">
-                            <div class="es-cross__single">
-                                <div class="es-cross__txt">20 tabletek</div>
-                                <a href="https://www.apteka-melissa.pl/produkt/no-spa-max-80-mg-20-tabl,3180.html" target="_blank" class="es-cross__btn">Sprawdź</a>
-                            </div>
-                                <div class="es-cross__single">
-                                <div class="es-cross__txt">48 tabletek</div>
-                                <a href="#" target="_blank" class="es-cross__btn">Sprawdź</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <div class="es-cross__title">
+              RODZINA PRODUKTÓW <span class="es-sanofi__span">No-Spa</span>
+          </div>
+          <div class="es-cross__wrp">
+              <div class="es-cross__header">
+                  <div class="es-cross__signature">Typ produktu</div>
+                  <div class="es-cross__signature">Dawkowanie</div>
+                  <div class="es-cross__signature">Składnik</div>
+                  <div class="es-cross__signature">Opakowanie</div>
+              </div>
+              <div class="es-cross__wrapper">
+                  <div class="es-cross__container">
+                      <div class="es-cross__content">
+                          <div class="es-cross__single es-cross__single--1">
+                              <a href="https://www.apteka-melissa.pl/produkt/no-spa-20-tabl,109.html"><img src="./img/cross-1.webp" alt="" class="es-cross__img"></a>
+                              <div class="es-cross__name">No-Spa</div>
+                          </div>
+                          <div class="es-cross__single es-cross__single--1">
+                              <a href="https://www.apteka-melissa.pl/produkt/no-spa-40-tabl,1723.html"><img src="./img/cross-2.webp" alt="" class="es-cross__img"></a>
+                              <div class="es-cross__name">No-Spa</div>
+                          </div>
+                      </div>
+                      <div class="es-cross__txt"><b>Tabletki</b> <br> Lek bez recepty</div>
+                      <div class="es-cross__txt">dzieci powyżej 6. roku życia, dorośli</div>
+                      <div class="es-cross__txt">40 mg chlorowodorku drotaweryny</div>
+                      <div class="es-cross__content">
+                          <div class="es-cross__single">
+                              <div class="es-cross__txt es-cross__txt--1">20 tabletek</div>
+                              <a href="https://www.apteka-melissa.pl/produkt/no-spa-20-tabl,109.html" class="es-cross__btn">Sprawdź</a>
+                          </div>
+                              <div class="es-cross__single">
+                              <div class="es-cross__txt es-cross__txt--1">40 tabletek</div>
+                              <a href="https://www.apteka-melissa.pl/produkt/no-spa-40-tabl,1723.html" class="es-cross__btn">Sprawdź</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="es-cross__container es-cross__container--2">
+                      <div class="es-cross__content">
+                          <div class="es-cross__single es-cross__single--1">
+                              <a href="https://www.apteka-melissa.pl/produkt/no-spa-max-80-mg-20-tabl,3180.html"><img src="./img/cross-3.webp" alt="" class="es-cross__img"></a>
+                              <div class="es-cross__name">No-Spa Max</div>
+                          </div>
+                          <div class="es-cross__single es-cross__single--1">
+                              <div class="es-cross__label">WIĘKSZE OPAKOWANIE</div>
+                              <a href="https://www.apteka-melissa.pl/produkt/no-spa-max-80-mg-48-tabletek,78836.html"><img src="./img/cross-4.webp" alt="" class="es-cross__img"></a>
+                              <div class="es-cross__name">No-Spa Max</div>
+                          </div>
+                      </div>
+                      <div class="es-cross__txt"><b>Tabletki powlekane</b> <br> Lek bez recepty</div>
+                      <div class="es-cross__txt">dzieci powyżej 12. roku życia, dorośli</div>
+                      <div class="es-cross__txt">80 mg chlorowodorku drotaweryny</div>
+                      <div class="es-cross__content">
+                          <div class="es-cross__single">
+                              <div class="es-cross__txt es-cross__txt--1">20 tabletek</div>
+                              <a href="https://www.apteka-melissa.pl/produkt/no-spa-max-80-mg-20-tabl,3180.html" class="es-cross__btn">Sprawdź</a>
+                          </div>
+                              <div class="es-cross__single">
+                              <div class="es-cross__txt es-cross__txt--1">48 tabletek</div>
+                              <a href="https://www.apteka-melissa.pl/produkt/no-spa-max-80-mg-48-tabletek,78836.html" class="es-cross__btn">Sprawdź</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
         </div>
 
         <div class="es-info">
@@ -1613,9 +1675,9 @@ src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
             </div>
             <div class="es-info__content">
                 <div class="es-info__single">
-                    <div class="es-info__pic">
+                    <a href="https://www.apteka-melissa.pl/blog/artykul/dlaczego-stres-wywoluje-bol-brzucha,1214.html" target="_blank" class="es-info__pic">
                         <img src="./img/pic-1-mb.webp" alt="Jak poradzić sobie z bólem brzucha na tle nerwowym?" class="es-info__img">
-                    </div>
+                    </a>
                     <div class="es-info__name">
                         Dlaczego stres wywołuje ból brzucha?
                     </div>
@@ -1624,9 +1686,9 @@ src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
                     </a>
                 </div>
                 <div class="es-info__single">
-                    <div class="es-info__pic">
+                    <a href="https://www.apteka-melissa.pl/blog/artykul/co-w-brzuchu-piszczy-bol-czy-skurcz-jak-je-rozpoznac-i-lagodzic-objawy,1224.html" target="_blank" class="es-info__pic">
                         <img src="./img/pic-2-mb.webp" alt="Kłucie, rwanie czy raczej ucisk? Kiedy skurcze żołądka powinny niepokoić?" class="es-info__img">
-                    </div>
+                    </a>
                     <div class="es-info__name">
                         Co w&nbsp;brzuchu piszczy? Ból czy skurcz? Jak je rozpoznać i&nbsp;łagodzić objawy?
                     </div>
@@ -1635,9 +1697,9 @@ src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
                     </a>
                 </div>
                 <div class="es-info__single">
-                    <div class="es-info__pic">
+                    <a href="https://www.apteka-melissa.pl/blog/artykul/zrozumiec-bol-brzucha-lokalizacje-rodzaje-przyczyny,1231.html" target="_blank" class="es-info__pic">
                         <img src="./img/pic-3-mb.webp" alt="Gdzie boli brzuch? Jakie są najczęstsze przyczyny bólu brzucha?" class="es-info__img">
-                    </div>
+                    </a>
                     <div class="es-info__name">
                         Zrozumieć ból brzucha: lokalizacje, rodzaje, przyczyny
                     </div>
@@ -1649,17 +1711,18 @@ src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
         </div>
 
         <div class="es-footer">
-            <div class="es-footer__claims">
-                1. ChPL No-Spa® Max, 80 mg, 01.2023. Drotaweryna jest szybko i&nbsp;całkowicie wchłaniana zarówno po podaniu doustnym, jak i&nbsp;jelitowym. Eder P. at el. Samodzielne leczenie drotaweryną u&nbsp;pacjentów z&nbsp;powszechnymi dolegliwościami ze strony jamy brzusznej oraz skuteczność leczenia z&nbsp;perspektywy pacjentów i&nbsp;lekarzy podstawowej opieki zdrowotnej – obserwacyjne, retrospektywne badanie przekrojowe z&nbsp;wykorzystaniem danych z&nbsp;praktyki rzeczywistej. Terapia 2022 nr 11(418).<br>
-                2. ChPL No-Spa® Max, 80 mg, tabletki, 01.2023.<br>
-                3. Dotyczy skurczowego bólu brzucha (w tym IBS). Efektem rozkurczowym jest brak bólu. CHPL No-Spa®, 80 mg, tabletki, 01.2023. Cichy W. Bóle brzucha – postępowanie pasywne czy aktywne? Świat Medycyny i&nbsp;Farmacji, Lekarz Rodzinny, kwiecień 2018: 6-18.<br>
-                4. Mastalerz-Migas A., Gwiazda E., Steciwko A. Bóle brzucha u&nbsp;dorosłych – diagnostyka różnicowa i&nbsp;postępowanie terapeutyczne. Terapia 2009, 9 z. 1 (299): 63-68.<br>
-                5. Dane z&nbsp;badania „Penetracje dolegliwości” zrealizowanego przez IQS dla Sanoﬁ w&nbsp;dniach 5-13.12.2022 r. metodą CAWI na reprezentatywnej próbie (N = 1561) Polaków powyżej 18. rokużycia.<br>
-                6. Rydzewska G. Postępowanie w&nbsp;czynnościowych bólach brzucha w&nbsp;świetle aktualnych rekomendacji. Lekarz POZ 1/2023.<br>
-                7. Dotyczy skurczowego bólu brzucha (w tym IBS). Efektem rozkurczowym jest brak bólu. CHPL No-Spa® Max, 80 mg, tabletki, 01.2023. Cichy W. Bóle brzucha – postępowanie pasywne czy aktywne? Świat Medycyny i&nbsp;Farmacji, Lekarz Rodzinny, kwiecień 2018: 6-18.<br>
-                8. w&nbsp;dawkowaniu No-Spa® Max należy podkreślić, że nie były prowadzone badania kliniczne z&nbsp;tą postacią leku z&nbsp;udziałem dzieci. w&nbsp;przypadku konieczności zastosowania produktu leczniczego No-Spa® Max u&nbsp;dzieci należy przestrzegać zalecanej dawki dobowej adekwatnej do ich wieku. ChPL No-Spa® Max, 80 mg, tabletki, 01.2023.<br>
-                9. Dane z&nbsp;Badania "Penetracje dolegliwości" zrealizowane przez IQS dla Sanofi w&nbsp;dniach 5-13.12.2022 r., metodą CAWI na reprezentatywnej próbie (N=1561) Polaków powyżej 18 roku życia. <br>
-            </div>
+          <div class="es-footer__claims">
+            1. ChPL No-Spa® Max, 80 mg, 08.2023. Drotaweryna jest szybko i&nbsp;całkowicie wchłaniana zarówno po podaniu doustnym, jak i&nbsp;jelitowym. Eder P. at el. Samodzielne leczenie drotaweryną u&nbsp;pacjentów z&nbsp;powszechnymi dolegliwościami ze strony jamy brzusznej oraz skuteczność leczenia z&nbsp;perspektywy pacjentów i&nbsp;lekarzy podstawowej opieki zdrowotnej – obserwacyjne, retrospektywne badanie przekrojowe z&nbsp;wykorzystaniem danych z&nbsp;praktyki rzeczywistej. Terapia 2022 nr&nbsp;11(418).<br>
+            2. ChPL No-Spa® Max, 80 mg, tabletki, 08.2023.<br>
+            3. Dotyczy skurczowego bólu brzucha (w tym IBS). Efektem rozkurczowym jest brak bólu. CHPL No-Spa®, 80 mg, tabletki, 08.2023. Cichy W. Bóle brzucha – postępowanie pasywne czy aktywne? Świat Medycyny i&nbsp;Farmacji, Lekarz Rodzinny, kwiecień 2018: 6-18.<br>
+            4. Mastalerz-Migas A., Gwiazda E., Steciwko A. Bóle brzucha u&nbsp;dorosłych – diagnostyka różnicowa i&nbsp;postępowanie terapeutyczne. Terapia 2009, 9 z. 1 (299): 63-68.<br>
+            5. Dane z&nbsp;badania „Penetracje dolegliwości” zrealizowanego przez IQS dla Sanoﬁ w&nbsp;dniach 5-13.12.2022 r. metodą CAWI na reprezentatywnej próbie (N = 1561) Polaków powyżej 18. rokużycia.<br>
+            6. Rydzewska G. Postępowanie w&nbsp;czynnościowych bólach brzucha w&nbsp;świetle aktualnych rekomendacji. Lekarz POZ 1/2023.<br>
+            7. Dotyczy skurczowego bólu brzucha (w tym IBS). Efektem rozkurczowym jest brak bólu. CHPL No-Spa® Max, 80 mg, tabletki, 08.2023. Cichy W. Bóle brzucha – postępowanie pasywne czy aktywne? Świat Medycyny i&nbsp;Farmacji, Lekarz Rodzinny, kwiecień 2018: 6-18.<br>
+            8. w&nbsp;dawkowaniu No-Spa® Max należy podkreślić, że nie były prowadzone badania kliniczne z&nbsp;tą postacią leku z&nbsp;udziałem dzieci. w&nbsp;przypadku konieczności zastosowania produktu leczniczego No-Spa® Max u&nbsp;dzieci należy przestrzegać zalecanej dawki dobowej adekwatnej do ich wieku. ChPL No-Spa® Max, 80 mg, tabletki, 08.2023.<br>
+            9. Dane z&nbsp;Badania "Penetracje dolegliwości" zrealizowane przez IQS dla Sanofi w&nbsp;dniach 5-13.12.2022 r., metodą CAWI na reprezentatywnej próbie (N=1561) Polaków powyżej 18 roku życia. <br>
+            10. Wytyczne dotyczące leczenia czynnościowego skurczowego bólu brzucha. Müller-Lissner S.&nbsp;et&nbsp;all., Functional Abdominal Cramping Pain, Expert Practical Guidance, J&nbsp;Clin Gastroenterol, Volume 56, Number 10, November/December 2022. <br>
+        </div>
             <div class="es-footer__txt">
                 NO-SPA Max, tabletki powlekane, 80 mg chlorowodorku drotaweryny. Wskazania: stany skurczowe mięśni gładkich związane z: 
                 kamicą dróg żółciowych, zapaleniem pęcherzyka żółciowego, zapaleniem okołopęcherzykowym, zapaleniem przewodów żółciowych, 
@@ -1675,7 +1738,7 @@ src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
             </div>
             <div class="es-footer__numbers">
                 <div class="es-footer__number">
-                    MAT-PL-2301616-1.0-07.2023
+                  MAT-PL-2301616-2.0-10.2023
                 </div>
                 <img src="./img/logo.webp" alt="sanofi logo" class="es-footer__logo">
             </div>
