@@ -214,20 +214,29 @@ src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
 
 #es-sanofi.es-sanofi .es-treatment__txt {
   margin: 0;
-  padding: 0 10px;
+  padding: 10px;
   line-height: inherit;
   color: #52338c;
   font-family: inherit;
   font-weight: inherit;
-  font-size: 16px;
-  margin-bottom: 12px;
-  text-align: center;
-  margin-inline: auto;
-  max-width: 415px;
+  font-size: 14px;
+  text-align: left;
+  padding-left: 48px;
+  position: relative;
 }
 
-#es-sanofi.es-sanofi .es-treatment__txt--desktop {
-  display: none;
+#es-sanofi.es-sanofi .es-treatment__txt--1 {
+  background-color: #d32833;
+  color: #fff;
+}
+
+#es-sanofi.es-sanofi .es-treatment__txt--2::before {
+  content: url(./img/dot.webp);
+  position: absolute;
+  top: 5px;
+  left: 16px;
+  width: 60px;
+  height: 60px;
 }
 
 #es-sanofi.es-sanofi .es-treatment__txt--span {
@@ -235,19 +244,21 @@ src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
 }
 
 #es-sanofi.es-sanofi .es-treatment__content {
-  background-color: #d32833;
+  background: url(./img/bg-1-mobile.webp);
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 5;
 }
 
 #es-sanofi.es-sanofi .es-treatment__subtitle {
-  font-family: "MontserratBold", sans-serif;
+  font-family: "MontserratRegular", sans-serif;
   margin: 0;
   padding: 20px 10px;
   line-height: inherit;
   color: #fff;
-  font-size: 16px;
-  text-align: center;
-  margin-inline: auto;
-  max-width: 385px;
+  font-size: 14px;
+  text-align: left;
+  padding-left: 48px;
 }
 
 #es-sanofi.es-sanofi .es-treatment__img {
@@ -270,14 +281,13 @@ src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
   -ms-transform: translateX(-500px);
   transform: translateX(-500px);
   transition-delay: 500ms;
-  max-width: 70%;
   margin-top: -30px;
 }
 
 #es-sanofi.es-sanofi .es-treatment__img--pillAppear {
-  -webkit-transform: translateX(40px);
-  -ms-transform: translateX(40px);
-  transform: translateX(40px);
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
 }
 
 #es-sanofi.es-sanofi .es-reasons {
@@ -1067,39 +1077,24 @@ src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
 #es-sanofi.es-sanofi .es-treatment__content {
   background: url(./img/bg-1.webp);
   background-repeat: no-repeat;
-  position: relative;
-  z-index: 5;
 }
 #es-sanofi.es-sanofi .es-treatment__txt {
   max-width: unset;
   padding: 20px 370px 20px 60px;
   font-size: 18px;
   text-align: left;
-  position: relative;
   margin-bottom: 0;
 }
 #es-sanofi.es-sanofi .es-treatment__txt--1 {
-  background-color: #d32833;
-  color: #fff;
   padding-right: 325px;
 }
 #es-sanofi.es-sanofi .es-treatment__txt--2::before {
-  content: url(./img/dot.webp);
-  position: absolute;
   top: 18px;
   left: 18px;
-  width: 30px;
-  height: 30px;
-}
-#es-sanofi.es-sanofi .es-treatment__txt--mobile {
-  display: none;
-}
-#es-sanofi.es-sanofi .es-treatment__txt--desktop {
-  display: block;
 }
 #es-sanofi.es-sanofi .es-treatment__subtitle {
   max-width: 400px;
-  margin-left: 50px;
+  margin-left: 12px;
   font-weight: 400;
   text-align: left;
   font-size: 18px;
@@ -1429,18 +1424,11 @@ src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
           <div class="es-treatment__title">
               JAK WŁAŚCIWIE <br> <span class="es-sanofi__span">LECZYĆ BÓL BRZUCHA?</span>
           </div>
-          <div class="es-treatment__txt es-treatment__txt--mobile">
-              <span class="es-treatment__txt--span">Ponad 50% Polaków</span> leczy skurczowe bóle brzucha lekami przeciwbólowymi<sup class="es-sanofi__sup">5</sup>, 
-              które nie są lekami pierwszego wyboru w&nbsp;przypadku skurczowego bólu brzucha<sup class="es-sanofi__sup">6</sup>, ponieważ działają na ośrodkowy układ nerwowy, a&nbsp;nie rozkurczowo.
-          </div>
-          <div class="es-treatment__txt es-treatment__txt--mobile">
-              Skurczowe bóle brzucha związane m.in. ze&nbsp;stresem, niewłaściwym jedzeniem lub chorobami dróg moczowych powinny być leczone u&nbsp;źródła - poprzez likwidację skurczu.
-          </div>
-          <div class="es-treatment__txt es-treatment__txt--1 es-treatment__txt--desktop">
+          <div class="es-treatment__txt es-treatment__txt--1">
               <span class="es-treatment__txt--span">Ponad 50% Polaków leczy skurczowe bóle brzucha lekami przeciwbólowymi<sup class="es-sanofi__sup">5</sup>, 
               które nie są lekami pierwszego wyboru w&nbsp;przypadku skurczowego bólu brzucha<sup class="es-sanofi__sup">6</sup></span>, ponieważ działają na ośrodkowy układ nerwowy, a&nbsp;nie&nbsp;rozkurczowo.
           </div>
-          <div class="es-treatment__txt es-treatment__txt--2 es-treatment__txt--desktop">
+          <div class="es-treatment__txt es-treatment__txt--2">
               Skurczowe bóle brzucha związane m.in. ze&nbsp;stresem, niewłaściwym jedzeniem lub chorobami dróg moczowych powinny być <span class="es-sanofi__span es-treatment__txt--span">leczone u&nbsp;źródła - poprzez likwidację skurczu.</span>
           </div>
           <div class="es-treatment__content">
@@ -1488,7 +1476,7 @@ src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
                             <img src="./img/icon-8.webp" alt="Drotaweryna pomaga w rozluźnieniu mięśni gładkich, w tym również przy bólach menstruacyjnych." class="es-reasons__img">
                         </div>
                         <div class="es-reasons__txt">
-                            Bóle menstruacyjne
+                            Bolesne miesiączkowanie
                         </div>
                     </div>
                     <div class="es-reasons__single">
@@ -1722,26 +1710,34 @@ src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
             8. w&nbsp;dawkowaniu No-Spa® Max należy podkreślić, że nie były prowadzone badania kliniczne z&nbsp;tą postacią leku z&nbsp;udziałem dzieci. w&nbsp;przypadku konieczności zastosowania produktu leczniczego No-Spa® Max u&nbsp;dzieci należy przestrzegać zalecanej dawki dobowej adekwatnej do ich wieku. ChPL No-Spa® Max, 80 mg, tabletki, 08.2023.<br>
             9. Dane z&nbsp;Badania "Penetracje dolegliwości" zrealizowane przez IQS dla Sanofi w&nbsp;dniach 5-13.12.2022 r., metodą CAWI na reprezentatywnej próbie (N=1561) Polaków powyżej 18 roku życia. <br>
             10. Wytyczne dotyczące leczenia czynnościowego skurczowego bólu brzucha. Müller-Lissner S.&nbsp;et&nbsp;all., Functional Abdominal Cramping Pain, Expert Practical Guidance, J&nbsp;Clin Gastroenterol, Volume 56, Number 10, November/December 2022. <br>
-        </div>
-            <div class="es-footer__txt">
-                NO-SPA Max, tabletki powlekane, 80 mg chlorowodorku drotaweryny. Wskazania: stany skurczowe mięśni gładkich związane z: 
-                kamicą dróg żółciowych, zapaleniem pęcherzyka żółciowego, zapaleniem okołopęcherzykowym, zapaleniem przewodów żółciowych, 
-                zapaleniem brodawki Vatera; kamicą nerkową, kamicą moczowodową, zapaleniem miedniczek nerkowych, zapaleniem pęcherza moczowego, 
-                bolesnym parciem na mocz. Leczenie wspomagające w&nbsp;stanach skurczowych mięśni gładkich przewodu pokarmowego, chorobie wrzodowej żołądka 
-                i&nbsp;dwunastnicy, zapaleniu żołądka, zapaleniu jelit, zapaleniu okrężnicy, stanach skurczowych wpustu i&nbsp;odźwiernika żołądka, zespole jelita drażliwego, 
-                zaparciach na tle spastycznym i&nbsp;wzdęciach jelit, zapaleniu trzustki; w&nbsp;bolesnym miesiączkowaniu. 
-                Podmiot odpowiedzialny: Opella Healthcare Commercial Ltd., Węgry, grupa Sanofi <br /> <i>{ChPL 01/2023}</i>
-            </div>
-            <div class="es-footer__warning">
-                To jest lek. Dla bezpieczeństwa stosuj go zgodnie z&nbsp;ulotką dołączoną do opakowania. 
-                Nie przekraczaj maksymalnej dawki leku. w&nbsp;przypadku wątpliwości skonsultuj się z&nbsp;lekarzem lub farmaceutą.
-            </div>
-            <div class="es-footer__numbers">
-                <div class="es-footer__number">
-                  MAT-PL-2301616-2.0-10.2023
-                </div>
-                <img src="./img/logo.webp" alt="sanofi logo" class="es-footer__logo">
-            </div>
+          </div>
+          <div class="es-footer__txt">
+              NO-SPA Max, tabletki powlekane, 80 mg chlorowodorku drotaweryny. Wskazania: stany skurczowe mięśni gładkich związane z: 
+              kamicą dróg żółciowych, zapaleniem pęcherzyka żółciowego, zapaleniem okołopęcherzykowym, zapaleniem przewodów żółciowych, 
+              zapaleniem brodawki Vatera; kamicą nerkową, kamicą moczowodową, zapaleniem miedniczek nerkowych, zapaleniem pęcherza moczowego, 
+              bolesnym parciem na mocz. Leczenie wspomagające w&nbsp;stanach skurczowych mięśni gładkich przewodu pokarmowego, chorobie wrzodowej żołądka 
+              i&nbsp;dwunastnicy, zapaleniu żołądka, zapaleniu jelit, zapaleniu okrężnicy, stanach skurczowych wpustu i&nbsp;odźwiernika żołądka, zespole jelita drażliwego, 
+              zaparciach na tle spastycznym i&nbsp;wzdęciach jelit, zapaleniu trzustki; w&nbsp;bolesnym miesiączkowaniu. 
+              Podmiot odpowiedzialny: Opella Healthcare Commercial Ltd., Węgry, grupa Sanofi <br /> <i>{ChPL 01/2023}</i>
+          </div>
+          <div class="es-footer__txt">
+            No-Spa, tabletki; 40 mg chlorowodorku drotaweryny. Wskazania: stany skurczowe mięśni gładkich związane z&nbsp;kamicą dróg żółciowych, 
+            zapaleniem pęcherzyka żółciowego, zapaleniem okołopęcherzykowym, zapaleniem przewodów żółciowych, zapaleniem brodawki Vatera; kamicą nerkową, 
+            kamicą moczowodową, zapaleniem miedniczek nerkowych, zapaleniem pęcherza moczowego, bolesnym parciem na mocz. Leczenie wspomagające w&nbsp;stanach 
+            skurczowych mięśni gładkich przewodu pokarmowego: chorobie wrzodowej żołądka i&nbsp;dwunastnicy, zapaleniu żołądka, zapaleniu jelit, zapaleniu okrężnicy, 
+            stanach skurczowych wpustu i&nbsp;odźwiernika żołądka, zespole jelita drażliwego, zaparciach na&nbsp;tle spastycznym i&nbsp;wzdęciach jelit, zapaleniu trzustki; w&nbsp;bolesnym miesiączkowaniu. 
+            Podmiot odpowiedzialny: Opella Healthcare Poland Sp.&nbsp;z&nbsp;o.o., grupa Sanofi <br /> <i>{ChPL 08/2023}</i>
+          </div>
+          <div class="es-footer__warning">
+              To jest lek. Dla bezpieczeństwa stosuj go zgodnie z&nbsp;ulotką dołączoną do opakowania. 
+              Nie przekraczaj maksymalnej dawki leku. w&nbsp;przypadku wątpliwości skonsultuj się z&nbsp;lekarzem lub farmaceutą.
+          </div>
+          <div class="es-footer__numbers">
+              <div class="es-footer__number">
+                MAT-PL-2301616-2.0-10.2023
+              </div>
+              <img src="./img/logo.webp" alt="sanofi logo" class="es-footer__logo">
+          </div>
         </div>
 
     </div>
